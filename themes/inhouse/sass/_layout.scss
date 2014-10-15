@@ -9,6 +9,7 @@ html {
 }
 
 body{
+  position: relative;
   width: 95%;
   margin: 0 auto;
   background-color: $lightgrey;
@@ -30,16 +31,44 @@ h1#inhouselogo {
   text-indent: -9999px;
 }
 
+video {
+  position: absolute;
+  width:100%;
+
+  opacity: .8;
+  z-index: 1;
+ 
+}
+
 nav{
+  position: relative;
   width: 100%;
-  padding: 10px 0px 10px 0px;
+  padding: -60px 0px 10px 0px;
+  z-index: 2;
+  overflow: visible
 }
 
 li.nav-li{
   width: 100%;
-  margin-top: 5px;
-  height: 50px;
-  line-height: 50px;  
+  margin-top: 5% ;
+  height: 55px;
+  line-height: 50px;
+  }  
+ 
+  @media screen and (max-width: 570px){
+    li.nav-li{
+ margin-top:1%;
+ height: 45px;
+ line-height: 40px;
+  }
+ }
+  
+
+
+
+#text{
+  padding-top: 15%;
+  
 }
   
   
@@ -55,7 +84,6 @@ ul#socialfooter{
 
 
 li.social-icons{
-  
   display: inline-block;
   margin: 0 auto;
   height: 60%;
@@ -75,7 +103,6 @@ h1#bottom-logo{
   background-image: url('images/bottomlogo.svg');
   background-size: 100%;
   width: 100%;
-
   padding-top: 15.8%;
   padding-bottom: 42px;
   height: 0;
