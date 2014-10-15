@@ -1,14 +1,33 @@
-$nam-blue: #1B5AA9;
-$nam-grey: #B6B6B9;
-$nam-yellow: #ffc300;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 
-$body-font:'Roboto Condensed', sans-serif;
-$header-font: 'Raleway', sans-serif;;
+$lightgrey: #F8F9FA;
+$black: #231F20;
+
+
+$open-font:'Open Sans Condensed', sans-serif;
+$body-font: 'Roboto Condensed', sans-serif;;
+
+@mixin social-media($pic) {
+  background-image: url($pic);
+  background-repeat: no-repeat;
+  background-position: top center; 
+  background-size: 50%;
+  text-indent: -9999px;
+}
+
+@mixin slow-hover($ms){
+  -webkit-transition: all ms ease;
+  -moz-transition: all ms ease;
+  -ms-transition: all $ms ease;
+  -o-transition: all $ms ease;
+  transition: all $ms ease;
+}
 
 h2{
-  font: 24px $header-font;
-  color: $nam-blue;
-  letter-spacing: .5px;
+  font: 34px $open-font;
+  font-weight: 400;
+  letter-spacing: -.7px;
   //text-transform: uppercase;
 }
 
@@ -31,8 +50,37 @@ a:visited {
 }
 
 
-@import "normalize";
-@import "box-sizing";
-@import "layout";
 
-
+li.nav-li{
+    color: #FFF;
+    font: 27px $open-font;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #000;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    letter-spacing:-.7 px;  
+  }
+  
+  li.nav-li:hover{
+    color: #000;
+    background: #F1F1F2;
+  @include slow-hover(800ms)
+}
+  
+  li#twitter {
+    @include social-media('images/twitter.png');
+} 
+  
+  li#instagram {
+   @include social-media('images/instagram.png');
+   
+}
+  
+  
+  li#facebook {
+   @include social-media('images/facebook.png');
+}
+  
+ 
