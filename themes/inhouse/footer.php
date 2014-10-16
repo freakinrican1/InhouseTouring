@@ -11,7 +11,7 @@
     <li id="facebook" class="social-icons" >
       Facebook
     </li>
-  </div>
+  </ul>
   
 
     

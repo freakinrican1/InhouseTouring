@@ -36,22 +36,32 @@ h3{
   
 }
 
+ul{
+  padding: 0;
+}
+
 p {
-  font: 16px $body-font;
+  font: 18px $body-font;
   
 }
 
 a {
+  color:#FFF;
   text-decoration: none;
 }
 
-a:visited {
+a:hover{
   color: #000;
+  @include slow-hover(800ms)
+}
+
+a:visited {
+  color: #FFF;
 }
 
 
 
-li.nav-li{
+li.page_item{
     color: #FFF;
     font: 27px $open-font;
     font-weight: 700;
@@ -64,7 +74,7 @@ li.nav-li{
     opacity: .5;  
   }
   
-  li.nav-li:hover{
+  li.page_item:hover{
     color: #000;
     background: #F1F1F2;
   @include slow-hover(800ms)

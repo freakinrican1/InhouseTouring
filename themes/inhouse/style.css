@@ -360,16 +360,28 @@ h2 {
 h3 {
   font: 20px "Roboto Condensed", sans-serif; }
 
+ul {
+  padding: 0; }
+
 p {
-  font: 16px "Roboto Condensed", sans-serif; }
+  font: 18px "Roboto Condensed", sans-serif; }
 
 a {
+  color: #FFF;
   text-decoration: none; }
 
-a:visited {
-  color: #000; }
+a:hover {
+  color: #000;
+  -webkit-transition: all ms ease;
+  -moz-transition: all ms ease;
+  -ms-transition: all 800ms ease;
+  -o-transition: all 800ms ease;
+  transition: all 800ms ease; }
 
-li.nav-li {
+a:visited {
+  color: #FFF; }
+
+li.page_item {
   color: #FFF;
   font: 27px "Open Sans Condensed", sans-serif;
   font-weight: 700;
@@ -381,7 +393,7 @@ li.nav-li {
   letter-spacing: -.7 px;
   opacity: .5; }
 
-li.nav-li:hover {
+li.page_item:hover {
   color: #000;
   background: #F1F1F2;
   -webkit-transition: all ms ease;
@@ -421,6 +433,7 @@ html {
 body {
   position: relative;
   width: 95%;
+  max-width: 1100px;
   margin: 0 auto;
   background-color: #F8F9FA;
   height: 100%; }
@@ -435,38 +448,34 @@ h1#inhouselogo {
   width: 100%;
   padding-top: 50.8%;
   height: 0;
-  text-indent: -9999px; }
+  text-indent: -9999px;
+  position: relative; }
 
 video {
   position: absolute;
   width: 100%;
-  opacity: .8;
+  opacity: .6;
   z-index: 1; }
 
-nav {
+.menu {
   position: relative;
   width: 100%;
   padding: -60px 0px 10px 0px;
   z-index: 2;
   overflow: visible; }
 
-li.nav-li {
+li.page_item {
   width: 100%;
-  margin-top: 5%;
-  height: 55px;
-  line-height: 50px; }
+  margin-top: 1.5%;
+  height: 45px;
+  line-height: 45px; }
 
-@media screen and (max-width: 570px) {
-  li.nav-li {
-    margin-top: 1%;
-    height: 45px;
-    line-height: 40px; } }
 #text {
-  padding-top: 15%; }
+  padding-top: 35%; }
 
 ul#socialfooter {
   padding: 0px;
-  width: 100%;
+  width: 80%;
   height: 100px;
   margin: 70px auto 0px auto;
   list-style-type: none; }
@@ -497,5 +506,34 @@ h1#bottom-logo {
   padding-bottom: 42px;
   height: 0;
   text-indent: -9999px; }
+
+@media (min-width: 800px) {
+  h1#inhouselogo {
+    background-repeat: no-repeat;
+    width: 50%;
+    padding-top: 50.8%;
+    position: absolute;
+    z-index: 10; }
+
+  video {
+    padding-top: 25px; }
+
+  .menu {
+    position: relative;
+    width: 30%;
+    float: right;
+    margin-top: 10%;
+    z-index: 2;
+    overflow: visible; }
+
+  #text {
+    padding-top: 60%;
+    width: 60%; }
+
+  ul#socialfooter {
+    width: 40%; }
+
+  h1#bottom-logo {
+    padding-top: 23.8%; } }
 
 /*# sourceMappingURL=style.css.map */
