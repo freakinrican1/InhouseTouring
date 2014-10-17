@@ -46,17 +46,22 @@ p {
 }
 
 a {
-  color:#FFF;
+  color:#000;
   text-decoration: none;
 }
 
 a:hover{
-  color: #000;
+  color: #FFF;
   @include slow-hover(800ms)
 }
 
 a:visited {
-  color: #FFF;
+  color: #000;
+}
+
+img{
+  
+  width: 100%;
 }
 
 
@@ -75,10 +80,46 @@ li.page_item{
   }
   
   li.page_item:hover{
-    color: #000;
     background: #F1F1F2;
+    color: #000;
   @include slow-hover(800ms)
 }
+
+.menu a{
+  width:100%;
+  padding: 0 20% 0 20%;
+  color: #FFF;
+  height: 45px;
+}
+
+.menu a:hover{
+  color: #000;
+  opacity: 1;
+  @include slow-hover(800ms)
+
+}
+
+.children li {
+  text-align: right;
+  font-size: 20px;
+  opacity: 1;
+}
+
+.children a{
+  text-size: 12px;
+  padding: 0 15% 0 40%;
+  text-align: right;
+  color: #FFF;
+  height: 45px;
+}
+
+.children a:hover{
+  color: #000;
+  opacity: 1;
+  @include slow-hover(800ms)
+
+}
+
   
   li#twitter {
     @include social-media('images/twitter.png');

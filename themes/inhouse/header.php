@@ -14,9 +14,12 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-  <link rel="stylesheet" id="inhouse-style-css" href="http://localhost:8888/inhouse/wp-content/themes/inhouse/style.css" type="text/css" media="all">
+  <?php wp_enqueue_script("jquery"); ?>
   
+  <link rel="stylesheet" id="inhouse-style-css" href="http://localhost:8888/inhouse/wp-content/themes/inhouse/style.css" type="text/css" media="all">
 
 	<?php wp_head(); ?>
+  <script type="text/javascript"
+     src="<?php bloginfo('template_directory');?>/menu.js"></script>
 </head>
 

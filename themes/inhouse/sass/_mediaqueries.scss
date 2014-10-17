@@ -7,6 +7,24 @@
     z-index:10;
   }
   
+  h1#bothgraphic{
+    padding-top:46.8%;
+  }
+  
+  
+  h2#inhouselogo{
+    background-image: url("images/inhouse-logo.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50%;
+    padding-top: 25.8%;
+    height: 0;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: -8;
+    margin: 10px auto 0 219px;
+  }
+  
   video{
     padding-top: 25px;
   }
@@ -16,8 +34,16 @@
     width: 30%;
     float: right;
     margin-top: 10%;
+    margin-bottom:5%;
     z-index: 2;
     overflow: visible
+  }
+  
+  
+  #logos{
+    width: 100%;
+    position: absolute;
+    margin-top: 275px;
   }
 
   #text{
@@ -25,16 +51,17 @@
     width: 60%;
   }
 
-  ul#socialfooter
-  {
-;
+  ul#socialfooter{
     width:40%;
   }
   
-  h1#bottom-logo
-  {
+  h1#bottom-logo {
     padding-top: 23.8%;
   }
 
+  .page{
+   padding-top: 45%;
+  }
+  
 
 }

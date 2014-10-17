@@ -3,7 +3,7 @@
 <div id="content">
 <h1 id="inhouselogo">Inhouse Touring</h1>
 
-<video id="uhm" autoplay>
+<video id="uhm" autoplay video muted loop>>
   <source src= "<?php bloginfo('template_directory');?>/images/Uhm.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
@@ -12,7 +12,17 @@
   
   <!-- <nav>
     <li id='home' class='nav-li'> -->
-       <?php wp_nav_menu( array( 'theme-location' => 'nav' ) ); ?>
+    
+<?php $output = wp_nav_menu( array(
+'menu' => 'nav',
+'container' => false,
+'echo' => '0',
+// 'menu_class' => 'menu',
+'items_wrap' => '<ul id="m" class="n">%3$s</ul>',
+'depth' => 2)); ?>  
+<?php echo $output; ?>     
+       
+       
     <!-- </li>
     <li id='about' class='nav-li'>
       Artists
@@ -27,7 +37,7 @@
   </div>
  <div id="text"> 
 <h2>About Inhouse</h2>  
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Inhouse Touring is a booking agency based in Omaha, Nebraska. Started by Jordan Smith, Inhouse works with passionate bands who are looking to tour in North America. With 6 years of tour booking experience, Inhouse can help your band get on the road and get the exposure it deserves. Feel free to contact us or send music.  </p>
 </div>
 
 

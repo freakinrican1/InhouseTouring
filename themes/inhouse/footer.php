@@ -2,15 +2,20 @@
   
   
   <ul id ='socialfooter'>
+    <a href ="https://twitter.com/inhousetouring">
     <li id="twitter" class="social-icons" >
       Twitter
-    </li>
+    </li></a>
+    
+    <a href ="http://instagram.com/twinsmithband">
     <li id="instagram" class="social-icons" >
       Instagram
-    </li>
+    </li></a>
+    
+    <a href = 'https://www.facebook.com/inhousetouring'>
     <li id="facebook" class="social-icons" >
       Facebook
-    </li>
+    </li></a>
   </ul>
   
 
