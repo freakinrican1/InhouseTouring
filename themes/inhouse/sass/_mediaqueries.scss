@@ -1,8 +1,8 @@
 @media (min-width: 800px){
   h1#inhouselogo {
     background-repeat: no-repeat;
-    width: 50%;
-    padding-top: 50.8%;
+    width: 60%;
+    padding-top: 55.8%;
     position: absolute;
     z-index:10;
   }
@@ -11,6 +11,16 @@
     padding-top:46.8%;
   }
   
+  h2{
+    font: 34px $open-font;
+    font-weight: 400;
+    letter-spacing: -.7px;
+    //text-transform: uppercase;
+  }
+  
+  h1#bothgraphic{
+	  margin-to: -49px;
+  }
   
   h2#inhouselogo{
     background-image: url("images/inhouse-logo.svg");
@@ -25,9 +35,21 @@
     margin: 10px auto 0 219px;
   }
   
-  video{
-    padding-top: 25px;
-  }
+h1#showsgraphic{
+	
+    padding-top: 37.8%;
+    margin-top: 0px;
+}
+
+
+h1#contactgraphic {
+  background-size: 100%;
+  padding-top: 37.8%;
+  margin-top: 0px;
+  opacity: .6;
+
+}
+	   
   
   .menu{
     position: relative;
@@ -36,9 +58,28 @@
     margin-top: 10%;
     margin-bottom:5%;
     z-index: 2;
-    overflow: visible
+    overflow: visible;
+	background:none;
   }
   
+  #homemenu{
+	  background: none;
+  }
+  
+  
+  video {
+    position: absolute;
+    width:100%;
+    opacity: .6;
+    z-index: 1;
+	padding-top: 25px;
+ 
+  }
+  
+  h1#seengraphic{
+    background-size: 100%;
+    margin-top: -49px;
+  }
   
   #logos{
     width: 100%;
@@ -47,8 +88,9 @@
   }
 
   #text{
-    padding-top: 60%;
-    width: 60%;
+    padding-top: 65%;
+    width: 85%;
+	margin: 0 auto;
   }
 
   ul#socialfooter{
@@ -65,3 +107,17 @@
   
 
 }
+
+
+
+@media (min-width: 460px){
+
+	#logos{
+		margin-top: 236px;
+	}
+
+	
+}
+
+
+

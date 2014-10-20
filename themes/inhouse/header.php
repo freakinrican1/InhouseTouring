@@ -12,11 +12,12 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<meta name="description" content="Inhouse Touring official Website">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <?php wp_enqueue_script("jquery"); ?>
   
-  <link rel="stylesheet" id="inhouse-style-css" href="http://localhost:8888/inhouse/wp-content/themes/inhouse/style.css" type="text/css" media="all">
+  <link rel="stylesheet" id="inhouse-style-css" href="<?php bloginfo('template_directory');?>/style.css" type="text/css" media="all">
 
 	<?php wp_head(); ?>
   <script type="text/javascript"

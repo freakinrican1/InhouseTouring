@@ -12,7 +12,9 @@
   
   <!-- <nav>
     <li id='home' class='nav-li'> -->
-    
+<div id="homemenu"> 
+	  </div>
+	   
 <?php $output = wp_nav_menu( array(
 'menu' => 'nav',
 'container' => false,
@@ -34,10 +36,11 @@
       Contact
     </li> -->
   </nav>
-  </div>
+
+</div>
  <div id="text"> 
-<h2>About Inhouse</h2>  
-<p>Inhouse Touring is a booking agency based in Omaha, Nebraska. Started by Jordan Smith, Inhouse works with passionate bands who are looking to tour in North America. With 6 years of tour booking experience, Inhouse can help your band get on the road and get the exposure it deserves. Feel free to contact us or send music.  </p>
+
+<h2>Inhouse Touring is a booking agency based in Omaha, Nebraska. Started by Jordan Smith, Inhouse works with passionate bands who are looking to tour in North America. With 6 years of tour booking experience, Inhouse can help your band get on the road and get the exposure it deserves. Feel free to contact us or send music.  </h2>
 </div>
 
 
