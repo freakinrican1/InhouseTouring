@@ -5,6 +5,7 @@
 
 <video id="uhm" autoplay video muted loop>>
   <source src= "<?php bloginfo('template_directory');?>/images/Uhm.mp4" type="video/mp4">
+  <source src= "<?php bloginfo('template_directory');?>/images/Uhm.ogv" type="video/ogg">
     Your browser does not support the video tag.
 </video>
 

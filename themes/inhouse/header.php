@@ -20,7 +20,7 @@
   <link rel="stylesheet" id="inhouse-style-css" href="<?php bloginfo('template_directory');?>/style.css" type="text/css" media="all">
 
 	<?php wp_head(); ?>
-  <script type="text/javascript"
-     src="<?php bloginfo('template_directory');?>/menu.js"></script>
+  <script type="text/javascript"src="<?php bloginfo('template_directory');?>/menu.js"></script>
+
 </head>
 
